@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game Project</title>
+    </head>
+    <body>
+        <div class="cursor">
+            <img src="images/game_mouse06.png" alt />
+        </div>
+
+        <header id="header">
+            <h1>WEBS GAME WORLD</h1>
+            <div class="time"></div>
+        </header>
+
+        <main id="contents">
+            <div class="icon_box">
+                <div class="icon1">
+                    <img src="images/game_icon01.png" alt="뮤직" />
+                    <span>빨강 음악 듣기</span>
+                </div>
+                <div class="icon2">
+                    <img src="images/game_icon02.png" alt="뮤직" />
+                    <span>파랑 음악 듣기</span>
+                </div>
+                <div class="icon3">
+                    <img src="images/game_icon03.png" alt="뮤직" />
+                    <span>초록 음악 듣기</span>
+                </div>
+                <div class="icon4">
+                    <img src="images/game_icon04.png" alt="뮤직" />
+                    <span>노랑 음악 듣기</span>
+                </div>
+            </div>
+
+            <!-- 뮤직 플레이어 -->
+            <div class="music__wrap">
+                <div class="music__inner">
+                    <div class="music__header">
+                        <span class="left"></span>
+                        <h2>Music</h2>
+                        <span class="right"></span>
+                    </div>
+                    <div class="music__contents">
+                        <div class="music__view">
+                            <div class="image">
+                                <img src="images/music_view10.png" alt="음악" />
+                            </div>
+                        </div>
+                        <div class="music__control">
+                            <div class="title">
+                                <h3>노래 제목</h3>
+                                <p>노래 작가 이림</p>
+                            </div>
+                            <div class="progress">
+                                <div class="bar">
+                                    <audio
+                                        id="main-audio"
+                                        src="audio/music_audio_01.mp3"
+                                    ></audio>
+                                </div>
+                                <div class="timer">
+                                    <span class="current">0:00</span>
+                                    <span class="duration">3:55</span>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <span>
+                                    <i
+                                        class="repeat"
+                                        id="control-repeat"
+                                        title="전체 반복"
+                                    ></i>
+                                    <!-- <i class="repeat_one" id="repeat_one" title="한곡 반복"></i> -->
+                                    <!-- <i class="shuffle" id="shuffle" title="랜덤 반복"></i>  -->
+                                </span>
+                                <span>
+                                    <i
+                                        class="prev"
+                                        id="control-prev"
+                                        title="이전곡 재생"
+                                    ></i>
+                                </span>
+                                <span>
+                                    <i
+                                        class="play"
+                                        id="control-play"
+                                        title="재생"
+                                    ></i>
+                                </span>
+                                <span>
+                                    <i
+                                        class="next"
+                                        id="control-next"
+                                        title="다음곡 재생"
+                                    ></i>
+                                </span>
+                                <span>
+                                    <i
+                                        class="list"
+                                        id="control-list"
+                                        title="재생 목록"
+                                    ></i>
+                                </span>
+                                <!-- <i class="stop" id="stop" title="정지 반복"></i> -->
+                            </div>
+                        </div>
+                        <div class="music__list">
+                            <h3>뮤직리스트<a href="#" class="close"></a></h3>
+                            <ul>
+                                <!-- <li>
+                                <span>
+                                    <img src="images/music_view01.png" alt="">
+                                </span>
+                                <div class="title">
+                                    <strong class="musictitle">adadsada</strong>
+                                    <em class="artist">아티스트</em>
+                                </div>
+                                <span class="time">재생시간</span>
+                            </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 뮤직 플레이어 -->
+            <!-- 테트리스 -->
+            <div class="tetris__wrap">
+                <h2 class="tetris__title">Tetris</h2>
+
+                <div class="tetris__start"></div>
+                <div class="tetris__text"></div>
+                <div class="tetris__score">
+                    <h3>Score:<span id="score">0</span></h3>
+                </div>
+                <div class="tetris__play">
+                    <div class="view">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //테트리스 -->
+        </main>
+        <footer id="footer">
+            <div class="info">
+                현재 맥을 사용하고 있으며, 화면 크기는 1920 X 760 입니다.
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
